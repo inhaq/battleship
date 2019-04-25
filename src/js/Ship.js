@@ -1,4 +1,3 @@
-
 let allShips = {
   edge : { size : 4 },
   summit : { size : 3 },
@@ -7,22 +6,17 @@ let allShips = {
   regant : { size : 1 },
 };
 
-const Ship = (ship) => {
-  let times = 3;
-  const hit = () => {
-    return ++times;
-  };
+const Ship = (name, length) => {
 
-  let {size} = ship;
-  const isSunk = () => {
-    return size === times;
-  };
+  let countHit = 0;
+  const hit = () => ++countHit;
 
-  return {hit, isSunk};
+  const isSunk = () => countHit === length;
+
+  return {name, length, countHit, hit, isSunk}
 };
 
-export {Ship, allShips};
-
+export {allShips, Ship};
 
 /*
 * loop -> randomly generate 2d array
