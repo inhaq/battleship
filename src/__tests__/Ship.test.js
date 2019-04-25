@@ -1,30 +1,31 @@
 import {Ship} from "../js/Ship";
 
-describe('new Ship for hit and sunk', function () {
+describe('edge Ship for hit and sunk', function () {
 
-  let myShip = Ship('edge',  3);
-  test('name of ship', () => {
+  let myShip = Ship('edge');
+  test('name', () => {
     expect(myShip.name).toBe('edge');
   });
 
-  test('length of ship', () => {
-    expect(myShip.length).toBe(3);
+  test('length', () => {
+    expect(myShip.size).toBe(4);
   });
 
-  test('hit ship', () => {
+  test('hits', () => {
     expect(myShip.hit()).toBe(1);
     expect(myShip.hit()).toBe(2);
+    expect(myShip.hit()).toBe(3);
   });
 
-  test('ship not sunk yet', () => {
+  test('not sunked yet', () => {
     expect(myShip.isSunk()).toBeFalsy();
   });
 
-  test('final hit ship', () => {
-    expect(myShip.hit()).toBe(myShip.length);
+  test('final hit', () => {
+    expect(myShip.hit()).toBe(myShip.size);
   });
 
-  test('sunk ship', () => {
+  test('sunked', () => {
     expect(myShip.isSunk()).toBeTruthy();
   });
 });
