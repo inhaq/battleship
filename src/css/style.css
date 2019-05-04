@@ -1,0 +1,41 @@
+.container {
+
+}
+
+.hit {
+    background-color: green !important;
+    height: 16px;
+    width: 15px;
+}
+
+.miss {
+    background-color: red;
+    height: 16px;
+    width: 15px;
+}
+
+.regant{
+    background-color: yellow;
+    height: 16px;
+    width: 15px;
+}
+.galaxy{
+    background-color: palevioletred;
+    height: 16px;
+    width: 15px;
+}
+.summit{
+    background-color: purple;
+    height: 16px;
+    width: 15px;
+}
+.edge{
+    background-color: maroon;
+    height: 16px;
+    width: 15px;
+}
+.oasis{
+    background-color: indigo;
+    height: 16px;
+    width: 15px;
+}

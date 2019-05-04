@@ -14,7 +14,7 @@ describe('Gameboard', function () {
   });
 
   test('hit/miss ship', function () {
-    let attack = gameBoard.receiveAttack(1);
+    let attack = gameBoard.receiveAttack(newBoard,1);
     if (newBoard[1] === 0){
       expect(attack).toBe(1)
     }
@@ -26,7 +26,7 @@ describe('Gameboard', function () {
   test('keep track of missed attack', function () {
     let attackedArr = [];
     for (let i = 0; i < 100; i++){
-      attackedArr.push(gameBoard.receiveAttack(i));
+      attackedArr.push(gameBoard.receiveAttack(newBoard,i));
     }
     expect(gameBoard.allSunk()).toBe(true);
   });
