@@ -14,27 +14,31 @@
     width: 15px;
 }
 
-.regant{
+.regant {
     background-color: yellow;
     height: 16px;
     width: 15px;
 }
-.galaxy{
+
+.galaxy {
     background-color: palevioletred;
     height: 16px;
     width: 15px;
 }
-.summit{
+
+.summit {
     background-color: purple;
     height: 16px;
     width: 15px;
 }
-.edge{
+
+.edge {
     background-color: maroon;
     height: 16px;
     width: 15px;
 }
-.oasis{
+
+.oasis {
     background-color: indigo;
     height: 16px;
     width: 15px;

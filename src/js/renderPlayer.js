@@ -9,5 +9,4 @@ function renderPlayer() {
   }
 }
 
-
 export {renderPlayer};

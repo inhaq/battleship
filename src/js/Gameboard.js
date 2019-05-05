@@ -1,7 +1,6 @@
 import {Ship, allShips} from "./Ship";
 
 const Gameboard = () => {
-
   let board = new Array(100).fill(0);
   const COLUMN = 10;
   const SLOT = {
