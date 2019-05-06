@@ -1,45 +1,97 @@
-.container {
+body {
+    min-height: 100%;
+    max-height: 100vh;
+    margin: 0;
+    background-color: #0077be;
+}
 
+.heading {
+    color: #fff;
+    text-align: center;
+    margin: 60px 0 0 0;
+}
+
+.tag {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.player, .bot {
+    height: 450px;
+    width: 450px;
+    margin: auto;
+}
+
+.box, .bot-box {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px 5px 0;
+    border-radius: 50%;
+    border: 0;
+}
+
+.box:focus, .bot-box:focus {
+    outline: 0;
+    border: 0;
+}
+
+.container {
+    padding: 50px;
+}
+
+.hit::before {
+    background-color: transparent !important;
+    content: "🔥" !important;
+    font-size: 35px;
 }
 
 .hit {
-    background-color: green !important;
-    height: 16px;
-    width: 15px;
+    background-color: transparent !important;
+    margin-bottom: -5px;
+}
+
+.hit::after {
+    margin-bottom: -5px;
 }
 
 .miss {
-    background-color: red;
-    height: 16px;
-    width: 15px;
+    background-color: #0077be;
 }
 
 .regant {
     background-color: yellow;
-    height: 16px;
-    width: 15px;
 }
 
 .galaxy {
     background-color: palevioletred;
-    height: 16px;
-    width: 15px;
 }
 
 .summit {
     background-color: purple;
-    height: 16px;
-    width: 15px;
 }
 
 .edge {
     background-color: maroon;
-    height: 16px;
-    width: 15px;
 }
 
 .oasis {
     background-color: indigo;
-    height: 16px;
-    width: 15px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .bot {
+        float: right;
+        margin-top: -20px;
+    }
+
+    .player {
+        float: left;
+    }
+
+    .container {
+        overflow: hidden;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 }
