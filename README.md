@@ -1,5 +1,14 @@
-### Battleship
+### Battleship (Human vs Bot)
 > Using Jest to master Test driven development
+
+Visit [here](https://b-ship.netlify.com/) to play
+
+###### How to play:
+ - Click on left circle(represent hiddent part of enemy area)
+ - If there is only water it'll be miss
+ - Hit will be when there is a ship
+ - Winner will be who hit others ships first
+ - More about it [here](https://en.wikipedia.org/wiki/Battleship_(game))
 
 ##### Takeaways:
 
