@@ -1,7 +1,7 @@
 ### Battleship (Human vs Bot)
 > Using Jest to master Test driven development
 
-Visit [here](https://b-ship.netlify.com/) to play
+Visit [here](https://b-ship.netlify.app/) to play
 
 ###### How to play:
  - Click on left circle(represent hiddent part of enemy area)
